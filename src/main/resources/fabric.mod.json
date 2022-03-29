@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "autoc",
+  "version": "${version}",
+
+  "name": "AutoC",
+  "description": "",
+  "authors": [
+    "REMAN, Nanocraft"
+  ],
+  "contact": {
+    "homepage": "https://nanocraft.kr/",
+    "sources": "https://github.com/reman8683"
+  },
+
+  "license": "MIT",
+  "icon": "assets/autoc/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.reman8683.autoc.AutoC"
+    ]
+  },
+  "mixins": [
+    "autoc.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.17.x",
+    "java": ">=16",
+    "fabric-api-base": "*",
+    "fabric-lifecycle-events-v1": "*",
+    "fabric-key-binding-api-v1": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
