@@ -1,7 +1,7 @@
 {
-  "Nanocrafteroo.gui.title.config": "Nanocrafteroo Config",
-  "key.category.Nanocrafteroo.autoc-category": "Nanocrafteroo",
+  "nanocrafteroo.gui.title.config": "Nanocrafteroo Config",
+  "key.category.nanocrafteroo.nanocrafteroo-category": "Nanocrafteroo",
 
-  "Nanocrafteroo.gui.button.config_gui.generic": "Generic",
-  "Nanocrafteroo.gui.button.config_gui.hotkeys": "Hotkeys"
+  "nanocrafteroo.gui.button.config_gui.generic": "Generic",
+  "nanocrafteroo.gui.button.config_gui.hotkeys": "Hotkeys"
 }

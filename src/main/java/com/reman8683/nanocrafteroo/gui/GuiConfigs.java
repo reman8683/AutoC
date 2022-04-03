@@ -17,7 +17,7 @@ public class GuiConfigs extends GuiConfigsBase {
     private static ConfigGuiTab tab = ConfigGuiTab.HOTKEYS;
 
     public GuiConfigs() {
-        super(10, 50, Reference.MOD_ID, null, "Nanocrafteroo.gui.title.config", String.format("%s", Reference.MOD_VERSION));
+        super(10, 50, Reference.MOD_ID, null, "nanocrafteroo.gui.title.config", String.format("%s", Reference.MOD_VERSION));
     }
 
     @Override
@@ -88,8 +88,8 @@ public class GuiConfigs extends GuiConfigsBase {
     }
 
     public enum ConfigGuiTab {
-        GENERIC ("Nanocrafteroo.gui.button.config_gui.generic"),
-        HOTKEYS ("Nanocrafteroo.gui.button.config_gui.hotkeys");
+        GENERIC ("nanocrafteroo.gui.button.config_gui.generic"),
+        HOTKEYS ("nanocrafteroo.gui.button.config_gui.hotkeys");
 
         private final String translationKey;
 

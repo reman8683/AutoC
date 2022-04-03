@@ -28,6 +28,6 @@ public class InputHandler implements IKeybindProvider, IKeyboardInputHandler, IM
 
     @Override
     public void addHotkeys(IKeybindManager manager) {
-        manager.addHotkeysForCategory(Reference.MOD_NAME, "Nanocrafteroo.hotkeys.category.hotkeys", Hotkeys.HOTKEY_LIST);
+        manager.addHotkeysForCategory(Reference.MOD_NAME, "nanocrafteroo.hotkeys.category.hotkeys", Hotkeys.HOTKEY_LIST);
     }
 }
