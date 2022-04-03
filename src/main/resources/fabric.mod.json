@@ -3,8 +3,8 @@
   "id": "nanocrafteroo",
   "version": "${version}",
 
-  "name": "Nanocrafteroo",
-  "description": "",
+  "name" : "Nanocrafteroo",
+  "description": "This mod for Nanocraft SMP",
   "authors": [
     "REMAN, Nanocraft"
   ],
