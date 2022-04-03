@@ -1,21 +1,23 @@
-package com.reman8683.autoc.gui;
+package com.reman8683.nanocrafteroo.gui;
 
 import java.util.Collections;
 import java.util.List;
+
+import com.reman8683.nanocrafteroo.config.Configs;
 import fi.dy.masa.malilib.config.IConfigBase;
 import fi.dy.masa.malilib.gui.GuiConfigsBase;
 import fi.dy.masa.malilib.gui.button.ButtonBase;
 import fi.dy.masa.malilib.gui.button.ButtonGeneric;
 import fi.dy.masa.malilib.gui.button.IButtonActionListener;
 import fi.dy.masa.malilib.util.StringUtils;
-import com.reman8683.autoc.Reference;
-import com.reman8683.autoc.config.Hotkeys;
+import com.reman8683.nanocrafteroo.Reference;
+import com.reman8683.nanocrafteroo.config.Hotkeys;
 
 public class GuiConfigs extends GuiConfigsBase {
     private static ConfigGuiTab tab = ConfigGuiTab.HOTKEYS;
 
     public GuiConfigs() {
-        super(10, 50, Reference.MOD_ID, null, "autoc.gui.title.config", String.format("%s", Reference.MOD_VERSION));
+        super(10, 50, Reference.MOD_ID, null, "Nanocrafteroo.gui.title.config", String.format("%s", Reference.MOD_VERSION));
     }
 
     @Override
@@ -54,7 +56,10 @@ public class GuiConfigs extends GuiConfigsBase {
         List<? extends IConfigBase> configs;
         ConfigGuiTab tab = GuiConfigs.tab;
 
-        if (tab == ConfigGuiTab.HOTKEYS) {
+        if (tab == ConfigGuiTab.GENERIC) {
+            configs = Configs.Generic.OPTIONS;
+        }
+        else if (tab == ConfigGuiTab.HOTKEYS) {
             configs = Hotkeys.HOTKEY_LIST;
         }
         else {
@@ -83,7 +88,8 @@ public class GuiConfigs extends GuiConfigsBase {
     }
 
     public enum ConfigGuiTab {
-        HOTKEYS ("autoc.gui.button.config_gui.hotkeys");
+        GENERIC ("Nanocrafteroo.gui.button.config_gui.generic"),
+        HOTKEYS ("Nanocrafteroo.gui.button.config_gui.hotkeys");
 
         private final String translationKey;
 

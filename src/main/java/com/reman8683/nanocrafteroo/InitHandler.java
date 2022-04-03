@@ -1,12 +1,12 @@
-package com.reman8683.autoc;
+package com.reman8683.nanocrafteroo;
 
-import com.reman8683.autoc.config.Configs;
+import com.reman8683.nanocrafteroo.config.Configs;
 import fi.dy.masa.malilib.config.ConfigManager;
 import net.minecraft.client.MinecraftClient;
 import fi.dy.masa.malilib.event.InputEventHandler;
 import fi.dy.masa.malilib.interfaces.IInitializationHandler;
-import com.reman8683.autoc.config.Callbacks;
-import com.reman8683.autoc.event.InputHandler;
+import com.reman8683.nanocrafteroo.config.Callbacks;
+import com.reman8683.nanocrafteroo.event.InputHandler;
 
 public class InitHandler implements IInitializationHandler
 {

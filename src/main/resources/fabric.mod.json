@@ -1,29 +1,29 @@
 {
   "schemaVersion": 1,
-  "id": "autoc",
+  "id": "nanocrafteroo",
   "version": "${version}",
 
-  "name": "AutoC",
+  "name": "Nanocrafteroo",
   "description": "",
   "authors": [
     "REMAN, Nanocraft"
   ],
   "contact": {
     "homepage": "https://nanocraft.kr/",
-    "sources": "https://github.com/reman8683"
+    "sources": "https://github.com/reman8683/Nanocrafteroo"
   },
 
   "license": "MIT",
-  "icon": "assets/autoc/icon.png",
+  "icon": "assets/nanocrafteroo/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "client": [
-      "com.reman8683.autoc.AutoC"
+      "com.reman8683.nanocrafteroo.Nanocrafteroo"
     ]
   },
   "mixins": [
-    "autoc.mixins.json"
+    "nanocrafteroo.mixins.json"
   ],
 
   "depends": {

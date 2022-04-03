@@ -1,12 +1,12 @@
-package com.reman8683.autoc.event;
+package com.reman8683.nanocrafteroo.event;
 
 import fi.dy.masa.malilib.hotkeys.IHotkey;
 import fi.dy.masa.malilib.hotkeys.IKeybindManager;
 import fi.dy.masa.malilib.hotkeys.IKeybindProvider;
 import fi.dy.masa.malilib.hotkeys.IKeyboardInputHandler;
 import fi.dy.masa.malilib.hotkeys.IMouseInputHandler;
-import com.reman8683.autoc.Reference;
-import com.reman8683.autoc.config.Hotkeys;
+import com.reman8683.nanocrafteroo.Reference;
+import com.reman8683.nanocrafteroo.config.Hotkeys;
 
 public class InputHandler implements IKeybindProvider, IKeyboardInputHandler, IMouseInputHandler {
     private static final InputHandler INSTANCE = new InputHandler();
@@ -28,6 +28,6 @@ public class InputHandler implements IKeybindProvider, IKeyboardInputHandler, IM
 
     @Override
     public void addHotkeys(IKeybindManager manager) {
-        manager.addHotkeysForCategory(Reference.MOD_NAME, "autoc.hotkeys.category.hotkeys", Hotkeys.HOTKEY_LIST);
+        manager.addHotkeysForCategory(Reference.MOD_NAME, "Nanocrafteroo.hotkeys.category.hotkeys", Hotkeys.HOTKEY_LIST);
     }
 }
